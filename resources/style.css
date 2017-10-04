@@ -2,22 +2,22 @@ body {
   font-size: 18px;
   line-height: 1.4;
   font-family: Helvetica;
+  display: block;
+  margin: 0;
 }
 
 /* first Half */
 .head {
-  height: 30rem;
-  background-size: cover;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
-}
-
-.headercontainer {
   display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
   justify-content: center;
 }
 
 .headerbanner {
-  display: flex;
+  display:flex;
   width: 960px;
   background-color: cadetblue;
   color: white;
@@ -49,7 +49,7 @@ li {
 }
 
 .headerbox {
-  display: flex;
+  display: block;
   background-color: white;
   font-weight: bold;
   font-size: 2rem;
@@ -57,23 +57,38 @@ li {
   color: black;
   padding: 1.5rem 5rem;
   margin-top: 10rem;
-  margin-left: 45rem;
-  margin-right: 5rem;
+}
+
+.headerbox h1 {
+  justify-content: flex-end;
 }
 
 /* Second Half*/
+
+.services {
+height: 8rem;
+margin-top: 3rem;
+margin-bottom: 3rem;
+}
+
 .imagecontainer {
+  display: block;
+}
+
+.paper, .ruler, .truck {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services p {
+    text-align: center;
 }
 
 .imagebox {
   display: flex;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .paper {
@@ -96,7 +111,34 @@ li {
   width: 5rem;
 }
 
-.imagetext {
+/* Philosophy and Appointments */
+.philappcontainer {
   display: flex;
-  justify-content: space-between;
+  border: 1px solid red;
+  width: 960px;
+}
+
+.philappitems {
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+.phil,
+.app {
+  display: flex;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.apptext {
+  width: 35%;
+}
+
+.philtext {
+width: 35%;
 }
